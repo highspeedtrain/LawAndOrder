@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " F",
+    " I"
+  ],
+  "key": {
+    "F": {
+      "item": "minecraft:oak_planks"
+    },
+    "I": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "result": {
+    "item": "createlawandorder:gavel",
+    "count": 1
+  }
+  }

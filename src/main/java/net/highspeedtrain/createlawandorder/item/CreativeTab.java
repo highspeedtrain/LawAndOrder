@@ -15,13 +15,13 @@ public class CreativeTab {
 
     public static final RegistryObject<CreativeModeTab> CREATE_LAW_AND_ORDER_TAB =
             CREATIVE_MODE_TABS.register("createlawandordermain", () -> CreativeModeTab.builder()
-                    .title(Component.translatable("itemGroup.createlawandorder"))
-                    .icon(() -> new ItemStack(ItemRegistry.GAVEL.get()))
-                    .displayItems((features, output) -> {
-                        output.accept(ItemRegistry.FEATHER_PEN.get());
-                        output.accept(ItemRegistry.GAVEL.get());
-                    })
-                    .build());
+                .title(Component.translatable("itemGroup.createlawandorder"))
+                .icon(() -> new ItemStack(ItemRegistry.GAVEL.get()))
+                .displayItems((features, output) -> {
+                    output.accept(ItemRegistry.FEATHER_PEN.get());
+                    output.accept(ItemRegistry.GAVEL.get());
+                })
+                .build());
 
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);

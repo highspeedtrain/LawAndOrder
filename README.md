@@ -1,6 +1,8 @@
+<p align="center">
 # **Create: Law and Order**
 
 # THIS MOD IS STILL IN DEVELOPMENT. VERY UNSTABLE AND UNFINISHED
+</p>
 
 **!! This mod requires Create. Currently only 0.5.1j is supported !!**
 

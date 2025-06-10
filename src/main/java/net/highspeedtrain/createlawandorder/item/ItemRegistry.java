@@ -1,6 +1,7 @@
 package net.highspeedtrain.createlawandorder.item;
 
 import net.highspeedtrain.createlawandorder.CreateLawAndOrder;
+import net.highspeedtrain.createlawandorder.item.custom.GavelItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -13,10 +14,15 @@ public class ItemRegistry {
             DeferredRegister.create(ForgeRegistries.ITEMS, CreateLawAndOrder.MOD_ID);
 
     public static final RegistryObject<Item> FEATHER_PEN = ITEMS.register("feather_pen",
-            () -> new Item(new Item.Properties().rarity(Rarity.COMMON)));
+        () -> new Item(new Item.Properties()
+        .rarity(Rarity.COMMON))
+        );
             
     public static final RegistryObject<Item> GAVEL = ITEMS.register("gavel",
-        () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
+        () -> new GavelItem(new Item.Properties()
+        .rarity(Rarity.UNCOMMON)
+        .stacksTo(1)
+        ));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

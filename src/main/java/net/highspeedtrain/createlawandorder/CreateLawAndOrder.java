@@ -1,5 +1,6 @@
 package net.highspeedtrain.createlawandorder;
 
+import net.highspeedtrain.createlawandorder.sounds.Sounds;
 import net.highspeedtrain.createlawandorder.item.ItemRegistry;
 import net.highspeedtrain.createlawandorder.item.CreativeTab;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -17,5 +18,6 @@ public class CreateLawAndOrder {
 
         ItemRegistry.register(modEventBus);
         CreativeTab.register(modEventBus);
+        Sounds.register(modEventBus);
     }
 }

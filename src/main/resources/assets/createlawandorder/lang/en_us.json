@@ -1,4 +1,6 @@
 {
+    "sounds.createlawandorder.gavel_use": "Gavel Slam",
+    
     "item.createlawandorder.feather_pen": "Feather Pen",
     "item.createlawandorder.gavel": "Gavel",
     "itemGroup.createlawandorder": "Create: Law and Order"

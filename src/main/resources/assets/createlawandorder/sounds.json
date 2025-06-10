@@ -1,0 +1,8 @@
+{
+    "gavel_use": {
+        "subtitle": "sounds.createlawandorder.gavel_use",
+        "sounds": [
+            "createlawandorder:gavel_use"
+        ]
+    }
+}

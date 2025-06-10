@@ -1,7 +1,9 @@
 <p align="center">
-# **Create: Law and Order**
+  <h1>Create: Law and Order</h1>
+</p>
 
-# THIS MOD IS STILL IN DEVELOPMENT. VERY UNSTABLE AND UNFINISHED
+<p align="center">
+  <em>THIS MOD IS STILL IN DEVELOPMENT. VERY UNSTABLE AND UNFINISHED</em>
 </p>
 
 **!! This mod requires Create. Currently only 0.5.1j is supported !!**

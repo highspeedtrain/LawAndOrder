@@ -32,6 +32,7 @@ public class GavelItem extends Item {
                 1, 
                 0
             );
+            p_41433_.getCooldowns().addCooldown(this, 120);
         }
 
         return super.use(p_41432_, p_41433_, p_41434_);

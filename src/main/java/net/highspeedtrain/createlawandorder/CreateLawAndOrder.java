@@ -1,8 +1,8 @@
 package net.highspeedtrain.createlawandorder;
 
-import net.highspeedtrain.createlawandorder.sounds.Sounds;
-import net.highspeedtrain.createlawandorder.item.ItemRegistry;
-import net.highspeedtrain.createlawandorder.item.CreativeTab;
+import net.highspeedtrain.createlawandorder.registry.CreativeTab;
+import net.highspeedtrain.createlawandorder.registry.ItemRegistry;
+import net.highspeedtrain.createlawandorder.registry.SoundRegistry;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -18,6 +18,6 @@ public class CreateLawAndOrder {
 
         ItemRegistry.register(modEventBus);
         CreativeTab.register(modEventBus);
-        Sounds.register(modEventBus);
+        SoundRegistry.register(modEventBus);
     }
 }

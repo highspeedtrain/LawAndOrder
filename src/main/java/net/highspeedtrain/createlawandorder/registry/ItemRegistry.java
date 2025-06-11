@@ -1,7 +1,7 @@
-package net.highspeedtrain.createlawandorder.item;
+package net.highspeedtrain.createlawandorder.registry;
 
 import net.highspeedtrain.createlawandorder.CreateLawAndOrder;
-import net.highspeedtrain.createlawandorder.item.custom.GavelItem;
+import net.highspeedtrain.createlawandorder.item.GavelItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -18,7 +18,7 @@ public class ItemRegistry {
         .rarity(Rarity.COMMON))
         );
             
-    public static final RegistryObject<Item> GAVEL = ITEMS.register("gavel",
+    public static final RegistryObject<GavelItem> GAVEL = ITEMS.register("gavel",
         () -> new GavelItem(new Item.Properties()
         .rarity(Rarity.UNCOMMON)
         .stacksTo(1)

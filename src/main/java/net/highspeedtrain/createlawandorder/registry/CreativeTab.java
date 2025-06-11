@@ -1,4 +1,4 @@
-package net.highspeedtrain.createlawandorder.item;
+package net.highspeedtrain.createlawandorder.registry;
 
 import net.highspeedtrain.createlawandorder.CreateLawAndOrder;
 import net.minecraft.core.registries.Registries;

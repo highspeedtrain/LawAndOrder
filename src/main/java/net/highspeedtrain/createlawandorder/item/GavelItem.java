@@ -1,6 +1,6 @@
-package net.highspeedtrain.createlawandorder.item.custom;
+package net.highspeedtrain.createlawandorder.item;
 
-import net.highspeedtrain.createlawandorder.sounds.Sounds;
+import net.highspeedtrain.createlawandorder.registry.SoundRegistry;
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
@@ -15,7 +15,6 @@ public class GavelItem extends Item {
         super(pProperties);
     }
 
-    @SuppressWarnings("null")
     @Override
     public InteractionResultHolder<ItemStack> use(Level p_41432_, Player p_41433_, InteractionHand p_41434_) {
         if (!p_41432_.isClientSide()) {
@@ -26,7 +25,7 @@ public class GavelItem extends Item {
                 positionClicked.getX(),  
                 positionClicked.getY(), 
                 positionClicked.getZ(),
-                Sounds.GAVEL_USE.get(), 
+                SoundRegistry.GAVEL_USE.get(), 
                 SoundSource.PLAYERS, 
                 1, 
                 1, 

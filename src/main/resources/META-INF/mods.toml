@@ -49,7 +49,7 @@ Sue players, criminal records, laws and more!
 [[dependencies.createlawandorder]]
     modId="create"
     mandatory=true
-    versionRange="0.5.1j"
+    versionRange="[0.5.1.j,)"
     ordering="NONE"
     side="BOTH"
 

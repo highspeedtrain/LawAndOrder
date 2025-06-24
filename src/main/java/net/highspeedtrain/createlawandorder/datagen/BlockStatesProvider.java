@@ -1,0 +1,25 @@
+package net.highspeedtrain.createlawandorder.datagen;
+
+import net.highspeedtrain.createlawandorder.CreateLawAndOrder;
+import net.highspeedtrain.createlawandorder.registry.BlockRegistry;
+
+import net.minecraft.data.PackOutput;
+import net.minecraft.world.level.block.Block;
+import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.registries.RegistryObject;
+
+public class BlockStatesProvider extends BlockStateProvider {
+    public BlockStatesProvider(PackOutput output, ExistingFileHelper exFileHelper) {
+        super(output, CreateLawAndOrder.MOD_ID, exFileHelper);
+    }
+
+    @Override
+    protected void registerStatesAndModels() {
+        blockWithItem(BlockRegistry.BLUE_BLOCK);
+    }
+
+    private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
+        simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
+    }
+}

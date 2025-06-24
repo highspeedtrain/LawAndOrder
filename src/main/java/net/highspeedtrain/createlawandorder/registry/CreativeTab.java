@@ -20,6 +20,8 @@ public class CreativeTab {
                 .displayItems((features, output) -> {
                     output.accept(ItemRegistry.FEATHER_PEN.get());
                     output.accept(ItemRegistry.GAVEL.get());
+
+                    output.accept(BlockRegistry.BLUE_BLOCK.get());
                 })
                 .build());
 

@@ -1,9 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    " F",
-    " I"
-  ],
+  "category": "misc",
   "key": {
     "F": {
       "item": "minecraft:feather"
@@ -12,8 +9,12 @@
       "item": "minecraft:ink_sac"
     }
   },
+  "pattern": [
+    "I",
+    "F"
+  ],
   "result": {
-    "item": "createlawandorder:feather_pen",
-    "count": 1
-  }
+    "item": "createlawandorder:feather_pen"
+  },
+  "show_notification": true
 }

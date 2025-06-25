@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "create:brass_ingot"
+    },
+    "W": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "WWW",
+    " B ",
+    " W "
+  ],
+  "result": {
+    "item": "createlawandorder:gavel"
+  },
+  "show_notification": true
+}

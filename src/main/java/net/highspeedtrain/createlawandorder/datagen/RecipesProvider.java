@@ -34,8 +34,8 @@ public class RecipesProvider extends RecipeProvider implements IConditionBuilder
             .pattern("WWW")
             .pattern(" B ")
             .pattern(" W ")
-            .define('B', AllItems.BRASS_INGOT.get())
-            .define('F', ItemTags.PLANKS)
+            .define('B', AllItems.BRASS_INGOT)
+            .define('W', ItemTags.PLANKS)
             .unlockedBy("has_feather", has(Items.FEATHER))
             .save(pWriter);
     }

@@ -19,10 +19,11 @@ public class ItemModelsProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         simpleItem(ItemRegistry.FEATHER_PEN);
+        simpleItem(ItemRegistry.GAVEL);
     }
 
     @SuppressWarnings("removal")
-    private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
+    private <T extends Item> ItemModelBuilder simpleItem(RegistryObject<T> item) {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(CreateLawAndOrder.MOD_ID,"item/" + item.getId().getPath()));

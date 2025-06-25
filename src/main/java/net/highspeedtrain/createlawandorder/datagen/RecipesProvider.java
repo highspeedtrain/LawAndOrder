@@ -10,6 +10,7 @@ import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.recipes.ShapedRecipeBuilder;
+import net.minecraft.data.recipes.ShapelessRecipeBuilder;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
@@ -22,11 +23,9 @@ public class RecipesProvider extends RecipeProvider implements IConditionBuilder
 
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemRegistry.FEATHER_PEN.get())
-            .pattern("I")
-            .pattern("F")
-            .define('I', Items.INK_SAC)
-            .define('F', Items.FEATHER)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ItemRegistry.FEATHER_PEN.get())
+            .requires(Items.INK_SAC)
+            .requires(Items.FEATHER)
             .unlockedBy("has_feather", has(Items.FEATHER))
             .save(pWriter);
         
@@ -36,7 +35,7 @@ public class RecipesProvider extends RecipeProvider implements IConditionBuilder
             .pattern(" W ")
             .define('B', AllItems.BRASS_INGOT)
             .define('W', ItemTags.PLANKS)
-            .unlockedBy("has_feather", has(Items.FEATHER))
+            .unlockedBy("has_feather", has(AllItems.BRASS_INGOT))
             .save(pWriter);
     }
 }

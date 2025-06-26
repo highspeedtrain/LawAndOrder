@@ -1,6 +1,7 @@
 package net.highspeedtrain.createlawandorder;
 
 import net.highspeedtrain.createlawandorder.registry.*;
+import net.highspeedtrain.createlawandorder.villager.VillagerProfessions;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -22,6 +23,7 @@ public class CreateLawAndOrder {
         ItemRegistry.register(modEventBus);
         CreativeTab.register(modEventBus);
         SoundRegistry.register(modEventBus);
+        VillagerProfessions.register(modEventBus);
         LOGGER.info("["+MOD_ID+"] registry complete.");
     }
 

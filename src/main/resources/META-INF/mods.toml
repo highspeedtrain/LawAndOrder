@@ -1,48 +1,32 @@
-modLoader="javafml" #mandatory
-loaderVersion="47.4.0" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+modLoader="javafml"
+loaderVersion="47.4.0"
 license="MIT"
-issueTrackerURL="https://github.com/highspeedtrain/Create-Law-and-Order/issues" #optional
-[[mods]] #mandatory
-modId="createlawandorder" #mandatory
-# The version number of the mod
-version="0.0.1" #mandatory
-# A display name for the mod
-displayName="Create Law and Order" #mandatory
-# A URL for the "homepage" for this mod, displayed in the mod UI
-displayURL="https://github.com/highspeedtrain/Create-Law-and-Order" #optional
-# A file name (in the root of the mod JAR) containing a logo for display
-#logoFile="examplemod.png" #optional
-# A text field displayed in the mod UI
-credits="highspeedtrain, AverAGEig" #optional
-# A text field displayed in the mod UI
-authors="highspeedtrain, AverAGEig" #optional
-# Mod display
+issueTrackerURL="https://github.com/highspeedtrain/Create-Law-and-Order/issues"
+
+[[mods]]
+modId="createlawandorder"
+version="0.0.1"
+displayName="Create Law and Order"
+displayURL="https://github.com/highspeedtrain/Create-Law-and-Order"
+credits="highspeedtrain, AverAGEig"
+authors="highspeedtrain, AverAGEig"
 displayTest="MATCH_VERSION"
 
-# The description text for the mod (multi line!) (#mandatory)
 description='''
 A mod that adds the judicial system to Create!
-Sue players, criminal records, laws and more!   
+Sue players, criminal records, laws and more! 
 '''
-# A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
-[[dependencies.createlawandorder]] #optional
-    # the modid of the dependency
-    modId="forge" #mandatory
-    # Does this dependency have to exist - if not, ordering below must be specified
-    mandatory=true #mandatory
-    # The version range of the dependency
-    versionRange="47.4.0" #mandatory
-    # An ordering relationship for the dependency - BEFORE or AFTER required if the dependency is not mandatory
-    # BEFORE - This mod is loaded BEFORE the dependency
-    # AFTER - This mod is loaded AFTER the dependency
+
+[[dependencies.createlawandorder]]
+    modId="forge"
+    mandatory=true
+    versionRange="47.4.0"
     ordering="NONE"
-    # Side this dependency is applied on - BOTH, CLIENT, or SERVER
     side="BOTH"
-# Here's another dependency
+
 [[dependencies.createlawandorder]]
     modId="minecraft"
     mandatory=true
-    # This version range declares a minimum of the current minecraft version up to but not including the next major version
     versionRange="1.20.1"
     ordering="NONE"
     side="BOTH"
@@ -52,9 +36,3 @@ Sue players, criminal records, laws and more!
     versionRange="[0.5.1.j,)"
     ordering="NONE"
     side="BOTH"
-
-# Features are specific properties of the game environment, that you may want to declare you require. This example declares
-# that your mod requires GL version 3.2 or higher. Other features will be added. They are side aware so declaring this won't
-# stop your mod loading on the server for example.
-#[features.${mod_id}]
-#openGLVersion="[3.2,)"

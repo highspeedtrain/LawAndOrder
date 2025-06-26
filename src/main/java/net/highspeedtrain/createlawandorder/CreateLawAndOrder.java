@@ -22,11 +22,9 @@ public class CreateLawAndOrder {
         ItemRegistry.register(modEventBus);
         CreativeTab.register(modEventBus);
         SoundRegistry.register(modEventBus);
-        LOGGER.info("["+MOD_ID+"] registry complete.");
     }
 
     @SubscribeEvent
     public void OnServerStarting() {
-        LOGGER.info("["+MOD_ID+"] initialised.");
     }
 }

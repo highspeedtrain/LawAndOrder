@@ -24,6 +24,11 @@ public class ItemRegistry {
         .stacksTo(1)
         ));
 
+    public static final RegistryObject<Item> MENU_GAVEL = ITEMS.register("menu_gavel",
+        () -> new Item(new Item.Properties()
+        .rarity(Rarity.UNCOMMON)
+        ));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

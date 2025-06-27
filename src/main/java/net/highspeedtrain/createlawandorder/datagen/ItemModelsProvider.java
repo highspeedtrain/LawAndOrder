@@ -20,6 +20,7 @@ public class ItemModelsProvider extends ItemModelProvider {
     protected void registerModels() {
         simpleItem(ItemRegistry.FEATHER_PEN);
         simpleItem(ItemRegistry.GAVEL);
+        simpleItem(ItemRegistry.MENU_GAVEL);
     }
 
     @SuppressWarnings("removal")

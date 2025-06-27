@@ -22,6 +22,7 @@ public class CreativeTab {
                     output.accept(ItemRegistry.GAVEL.get());
 
                     output.accept(BlockRegistry.BLUE_BLOCK.get());
+                    output.accept(BlockRegistry.COURT_TERMINAL.get());
                 })
                 .build());
 

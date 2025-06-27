@@ -5,7 +5,7 @@ issueTrackerURL="https://github.com/highspeedtrain/Create-Law-and-Order/issues" 
 [[mods]] #mandatory
 modId="createlawandorder" #mandatory
 # The version number of the mod
-version="0.0.2" #mandatory
+version="0.0.3" #mandatory
 # A display name for the mod
 displayName="Create Law and Order" #mandatory
 # A URL for the "homepage" for this mod, displayed in the mod UI

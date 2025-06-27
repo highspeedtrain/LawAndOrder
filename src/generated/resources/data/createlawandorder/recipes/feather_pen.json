@@ -1,20 +1,15 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "key": {
-    "F": {
-      "item": "minecraft:feather"
-    },
-    "I": {
+  "ingredients": [
+    {
       "item": "minecraft:ink_sac"
+    },
+    {
+      "item": "minecraft:feather"
     }
-  },
-  "pattern": [
-    "I",
-    "F"
   ],
   "result": {
     "item": "createlawandorder:feather_pen"
-  },
-  "show_notification": true
+  }
 }

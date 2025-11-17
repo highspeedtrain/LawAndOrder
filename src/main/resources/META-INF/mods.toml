@@ -1,15 +1,22 @@
 modLoader="javafml"
 loaderVersion="47.4.0"
 license="MIT"
-issueTrackerURL="https://github.com/highspeedtrain/Create-Law-and-Order/issues"
-
-[[mods]]
-modId="createlawandorder"
-version="0.0.1"
-displayName="Create Law and Order"
-displayURL="https://github.com/highspeedtrain/Create-Law-and-Order"
-credits="highspeedtrain, AverAGEig"
-authors="highspeedtrain, AverAGEig"
+issueTrackerURL="https://github.com/highspeedtrain/Create-Law-and-Order/issues" #optional
+[[mods]] #mandatory
+modId="createlawandorder" #mandatory
+# The version number of the mod
+version="0.0.3" #mandatory
+# A display name for the mod
+displayName="Create Law and Order" #mandatory
+# A URL for the "homepage" for this mod, displayed in the mod UI
+displayURL="https://github.com/highspeedtrain/Create-Law-and-Order" #optional
+# A file name (in the root of the mod JAR) containing a logo for display
+#logoFile="examplemod.png" #optional
+# A text field displayed in the mod UI
+credits="highspeedtrain, AverAGEig" #optional
+# A text field displayed in the mod UI
+authors="highspeedtrain, AverAGEig" #optional
+# Mod display
 displayTest="MATCH_VERSION"
 
 description='''

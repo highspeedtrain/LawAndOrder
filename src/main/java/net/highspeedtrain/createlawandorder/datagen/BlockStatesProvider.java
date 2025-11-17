@@ -19,7 +19,7 @@ public class BlockStatesProvider extends BlockStateProvider {
         blockWithItem(BlockRegistry.BLUE_BLOCK);
     }
 
-    private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
+    private <T extends Block> void blockWithItem(RegistryObject<T> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
     }
 }

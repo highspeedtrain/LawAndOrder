@@ -1,7 +1,7 @@
-package net.highspeedtrain.createlawandorder.registry;
+package net.highspeedtrain.createlawandorder.core.registry;
 
 import net.highspeedtrain.createlawandorder.CreateLawAndOrder;
-import net.highspeedtrain.createlawandorder.item.GavelItem;
+import net.highspeedtrain.createlawandorder.content.item.GavelItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -22,11 +22,6 @@ public class ItemRegistry {
         () -> new GavelItem(new Item.Properties()
         .rarity(Rarity.UNCOMMON)
         .stacksTo(1)
-        ));
-
-    public static final RegistryObject<Item> MENU_GAVEL = ITEMS.register("menu_gavel",
-        () -> new Item(new Item.Properties()
-        .rarity(Rarity.UNCOMMON)
         ));
 
     public static void register(IEventBus eventBus) {

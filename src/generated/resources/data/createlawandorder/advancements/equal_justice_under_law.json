@@ -1,0 +1,38 @@
+{
+  "criteria": {
+    "obtain_gavel": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "createlawandorder:gavel"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "description": {
+      "translate": "advancement.equal_justice_under_law.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "createlawandorder:gavel"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.equal_justice_under_law.title"
+    }
+  },
+  "requirements": [
+    [
+      "obtain_gavel"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

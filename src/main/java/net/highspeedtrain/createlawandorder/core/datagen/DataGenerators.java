@@ -1,12 +1,15 @@
-package net.highspeedtrain.createlawandorder.datagen;
+package net.highspeedtrain.createlawandorder.core.datagen;
 
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 import net.highspeedtrain.createlawandorder.CreateLawAndOrder;
+import net.highspeedtrain.createlawandorder.core.datagen.advancement.AdvancementsGenerator;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.common.data.ForgeAdvancementProvider;
 import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -29,6 +32,15 @@ public class DataGenerators {
         BlockTagProvider blockTagProv = generator.addProvider(event.includeServer(), 
             new BlockTagProvider(output, lookupProvider, existingFileHelper));
         generator.addProvider(event.includeServer(), new ItemTagProvider(output, lookupProvider, blockTagProv.contentsGetter(), existingFileHelper));
-        generator.addProvider(event.includeServer(), new PoiTagsProvider(output, lookupProvider, existingFileHelper));
+
+        generator.addProvider(
+            event.includeServer(), 
+            new ForgeAdvancementProvider(
+                output, 
+                lookupProvider, 
+                existingFileHelper, 
+                List.of(new AdvancementsGenerator())
+            )
+        );
     }
 }

@@ -22,3 +22,4 @@ eclipse
 run
 .vscode
 run-data
+src/generated/.cache/*

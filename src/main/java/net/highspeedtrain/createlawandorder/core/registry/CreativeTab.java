@@ -1,4 +1,4 @@
-package net.highspeedtrain.createlawandorder.registry;
+package net.highspeedtrain.createlawandorder.core.registry;
 
 import net.highspeedtrain.createlawandorder.CreateLawAndOrder;
 import net.minecraft.core.registries.Registries;
@@ -16,13 +16,12 @@ public class CreativeTab {
     public static final RegistryObject<CreativeModeTab> CREATE_LAW_AND_ORDER_TAB =
             CREATIVE_MODE_TABS.register("createlawandordermain", () -> CreativeModeTab.builder()
                 .title(Component.translatable("itemGroup.createlawandorder"))
-                .icon(() -> new ItemStack(ItemRegistry.MENU_GAVEL.get()))
+                .icon(() -> new ItemStack(ItemRegistry.GAVEL.get()))
                 .displayItems((features, output) -> {
                     output.accept(ItemRegistry.FEATHER_PEN.get());
                     output.accept(ItemRegistry.GAVEL.get());
 
                     output.accept(BlockRegistry.BLUE_BLOCK.get());
-                    output.accept(BlockRegistry.COURT_TERMINAL.get());
                 })
                 .build());
 

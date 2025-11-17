@@ -1,4 +1,4 @@
-package net.highspeedtrain.createlawandorder.block;
+package net.highspeedtrain.createlawandorder.content.block;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;

@@ -1,12 +1,12 @@
-package net.highspeedtrain.createlawandorder.datagen;
+package net.highspeedtrain.createlawandorder.core.datagen;
 
 import java.util.concurrent.CompletableFuture;
 
 import org.jetbrains.annotations.Nullable;
 
 import net.highspeedtrain.createlawandorder.CreateLawAndOrder;
-import net.highspeedtrain.createlawandorder.registry.BlockRegistry;
-import net.highspeedtrain.createlawandorder.registry.Tags;
+import net.highspeedtrain.createlawandorder.core.registry.BlockRegistry;
+import net.highspeedtrain.createlawandorder.core.registry.Tags;
 import net.minecraft.core.HolderLookup.Provider;
 import net.minecraft.data.PackOutput;
 import net.minecraftforge.common.data.BlockTagsProvider;

@@ -1,6 +1,6 @@
-package net.highspeedtrain.createlawandorder.item;
+package net.highspeedtrain.createlawandorder.content.item;
 
-import net.highspeedtrain.createlawandorder.registry.SoundRegistry;
+import net.highspeedtrain.createlawandorder.core.registry.SoundRegistry;
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;

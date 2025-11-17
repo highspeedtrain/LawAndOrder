@@ -1,4 +1,4 @@
-package net.highspeedtrain.createlawandorder.registry;
+package net.highspeedtrain.createlawandorder.core.registry;
 
 import net.highspeedtrain.createlawandorder.CreateLawAndOrder;
 import net.minecraft.resources.ResourceLocation;

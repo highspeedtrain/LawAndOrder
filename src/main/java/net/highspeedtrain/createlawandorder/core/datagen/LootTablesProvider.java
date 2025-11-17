@@ -1,9 +1,9 @@
-package net.highspeedtrain.createlawandorder.datagen;
+package net.highspeedtrain.createlawandorder.core.datagen;
 
 import java.util.List;
 import java.util.Set;
 
-import net.highspeedtrain.createlawandorder.datagen.loot.BlockLootTables;
+import net.highspeedtrain.createlawandorder.core.datagen.loot.BlockLootTables;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;

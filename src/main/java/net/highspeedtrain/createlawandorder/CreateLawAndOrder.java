@@ -1,6 +1,6 @@
 package net.highspeedtrain.createlawandorder;
 
-import net.highspeedtrain.createlawandorder.registry.*;
+import net.highspeedtrain.createlawandorder.core.registry.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

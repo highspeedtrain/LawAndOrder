@@ -1,4 +1,4 @@
-package net.highspeedtrain.createlawandorder.datagen;
+package net.highspeedtrain.createlawandorder.core.datagen;
 
 import java.util.concurrent.CompletableFuture;
 

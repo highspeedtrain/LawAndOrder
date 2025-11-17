@@ -1,7 +1,7 @@
-package net.highspeedtrain.createlawandorder.datagen;
+package net.highspeedtrain.createlawandorder.core.datagen;
 
 import net.highspeedtrain.createlawandorder.CreateLawAndOrder;
-import net.highspeedtrain.createlawandorder.registry.ItemRegistry;
+import net.highspeedtrain.createlawandorder.core.registry.ItemRegistry;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
@@ -20,7 +20,6 @@ public class ItemModelsProvider extends ItemModelProvider {
     protected void registerModels() {
         simpleItem(ItemRegistry.FEATHER_PEN);
         simpleItem(ItemRegistry.GAVEL);
-        simpleItem(ItemRegistry.MENU_GAVEL);
     }
 
     @SuppressWarnings("removal")

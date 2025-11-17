@@ -1,4 +1,4 @@
-package net.highspeedtrain.createlawandorder.villager;
+package net.highspeedtrain.createlawandorder.content.villager;
 
 import net.minecraft.world.level.GameType;
 import net.minecraft.world.level.Level;

@@ -1,6 +1,6 @@
-package net.highspeedtrain.createlawandorder.datagen.loot;
+package net.highspeedtrain.createlawandorder.core.datagen.loot;
 
-import net.highspeedtrain.createlawandorder.registry.*;
+import net.highspeedtrain.createlawandorder.core.registry.*;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.level.block.Block;
@@ -16,7 +16,6 @@ public class BlockLootTables extends BlockLootSubProvider {
     @Override
     protected void generate() {
         this.dropSelf(BlockRegistry.BLUE_BLOCK.get());
-        this.dropSelf(BlockRegistry.COURT_TERMINAL.get());
     }
 
     @Override

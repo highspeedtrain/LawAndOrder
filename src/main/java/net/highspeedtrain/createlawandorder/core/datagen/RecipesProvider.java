@@ -1,10 +1,10 @@
-package net.highspeedtrain.createlawandorder.datagen;
+package net.highspeedtrain.createlawandorder.core.datagen;
 
 import java.util.function.Consumer;
 
 import com.simibubi.create.AllItems;
 
-import net.highspeedtrain.createlawandorder.registry.ItemRegistry;
+import net.highspeedtrain.createlawandorder.core.registry.ItemRegistry;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.data.recipes.RecipeCategory;

@@ -1,8 +1,7 @@
-package net.highspeedtrain.createlawandorder.datagen;
+package net.highspeedtrain.createlawandorder.core.datagen;
 
 import net.highspeedtrain.createlawandorder.CreateLawAndOrder;
-import net.highspeedtrain.createlawandorder.registry.BlockRegistry;
-
+import net.highspeedtrain.createlawandorder.core.registry.BlockRegistry;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.BlockStateProvider;

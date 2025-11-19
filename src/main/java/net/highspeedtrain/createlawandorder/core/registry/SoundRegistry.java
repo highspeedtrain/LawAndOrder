@@ -1,7 +1,6 @@
 package net.highspeedtrain.createlawandorder.core.registry;
 
 import net.highspeedtrain.createlawandorder.CreateLawAndOrder;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -14,9 +13,8 @@ public class SoundRegistry {
 
     public static final RegistryObject<SoundEvent> GAVEL_USE = registerSoundEvents("gavel_use");
 
-    @SuppressWarnings("removal")
     private static RegistryObject<SoundEvent> registerSoundEvents(String name) {
-        return SOUND_EVENTS.register(name, () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(CreateLawAndOrder.MOD_ID, name)));
+        return SOUND_EVENTS.register(name, () -> SoundEvent.createVariableRangeEvent(CreateLawAndOrder.modPath(name)));
     }
     
     public static void register(IEventBus eventBus) {

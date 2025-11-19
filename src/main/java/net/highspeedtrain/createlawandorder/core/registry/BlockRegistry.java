@@ -3,6 +3,7 @@ package net.highspeedtrain.createlawandorder.core.registry;
 import java.util.function.Supplier;
 
 import net.highspeedtrain.createlawandorder.CreateLawAndOrder;
+import net.highspeedtrain.createlawandorder.content.block.CourtTerminalBlock;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -20,6 +21,10 @@ public class BlockRegistry {
     //
     public static final RegistryObject<Block> BLUE_BLOCK = registerBlock("blue_block", () -> new Block(
         BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
+    ));
+
+    public static final RegistryObject<Block> COURT_TERMINAL = registerBlock("court_terminal", () -> new CourtTerminalBlock(
+        BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()
     ));
     //
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

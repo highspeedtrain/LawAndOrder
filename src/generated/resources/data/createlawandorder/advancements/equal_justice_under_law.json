@@ -17,7 +17,7 @@
     "announce_to_chat": true,
     "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
     "description": {
-      "translate": "advancement.equal_justice_under_law.desc"
+      "translate": "createlawandorder.advancement.equal_justice_under_law.desc"
     },
     "frame": "task",
     "hidden": false,
@@ -26,7 +26,7 @@
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.equal_justice_under_law.title"
+      "translate": "createlawandorder.advancement.equal_justice_under_law.title"
     }
   },
   "requirements": [

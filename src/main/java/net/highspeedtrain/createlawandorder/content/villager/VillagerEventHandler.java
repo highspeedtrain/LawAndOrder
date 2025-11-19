@@ -7,6 +7,7 @@ import net.minecraft.world.phys.AABB;
 import java.util.List;
 
 import net.highspeedtrain.createlawandorder.CreateLawAndOrder;
+import net.highspeedtrain.createlawandorder.core.registry.VillagerProfessions;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
@@ -23,11 +24,9 @@ import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 public class VillagerEventHandler {
     @SubscribeEvent
     public static void onVillagerDeath(LivingDeathEvent event) {
-        CreateLawAndOrder.LOGGER.info("thing ded");
         if (!(event.getEntity() instanceof Villager)) {
             return;
         }
-        CreateLawAndOrder.LOGGER.info("that thing was a villager");
         
         Villager villager = (Villager) event.getEntity();
         Level level = villager.level();
@@ -44,7 +43,6 @@ public class VillagerEventHandler {
         );
 
         if(!nearbyEntities.isEmpty()) {
-            CreateLawAndOrder.LOGGER.info("OMG CRIME!!");
             Entity trueSource = event.getSource().getEntity();
             if (!(trueSource instanceof ServerPlayer player)) {
                 return;
@@ -59,6 +57,7 @@ public class VillagerEventHandler {
                 1
             );
             player.sendSystemMessage(Component.literal("He saw that."));
+            player.kill();
         }
     }
 

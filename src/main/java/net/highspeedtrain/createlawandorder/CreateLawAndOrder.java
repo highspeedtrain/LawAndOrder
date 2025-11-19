@@ -1,13 +1,14 @@
 package net.highspeedtrain.createlawandorder;
 
+import net.highspeedtrain.createlawandorder.content.network.CLONetworking;
 import net.highspeedtrain.createlawandorder.core.registry.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 import com.mojang.logging.LogUtils;
+
 import org.slf4j.Logger;
 
 @Mod(CreateLawAndOrder.MOD_ID)
@@ -23,13 +24,16 @@ public class CreateLawAndOrder {
         ItemRegistry.register(modEventBus);
         CreativeTab.register(modEventBus);
         SoundRegistry.register(modEventBus);
+        VillagerProfessions.register(modEventBus);
+        MenuRegistry.register(modEventBus);
+        CLONetworking.register();
     }
 
     public static ResourceLocation modPath(String path) {
         return ResourceLocation.fromNamespaceAndPath(MOD_ID, path);
     }
 
-    @SubscribeEvent
-    public void OnServerStarting() {
+    public static ResourceLocation path(String path) {
+        return ResourceLocation.parse(path);
     }
 }

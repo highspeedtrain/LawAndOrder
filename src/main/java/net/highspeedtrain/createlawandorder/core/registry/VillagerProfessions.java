@@ -1,8 +1,7 @@
-package net.highspeedtrain.createlawandorder.content.villager;
+package net.highspeedtrain.createlawandorder.core.registry;
 
 import com.google.common.collect.ImmutableSet;
 import net.highspeedtrain.createlawandorder.CreateLawAndOrder;
-import net.highspeedtrain.createlawandorder.core.registry.BlockRegistry;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.ai.village.poi.PoiType;
 import net.minecraft.world.entity.npc.VillagerProfession;

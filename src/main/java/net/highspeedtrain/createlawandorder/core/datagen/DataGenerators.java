@@ -28,6 +28,7 @@ public class DataGenerators {
 
         generator.addProvider(event.includeClient(), new BlockStatesProvider(output, existingFileHelper));
         generator.addProvider(event.includeClient(), new ItemModelsProvider(output, existingFileHelper));
+        generator.addProvider(event.includeServer(), new PoiTagsProvider(output, lookupProvider, existingFileHelper));
         
         BlockTagProvider blockTagProv = generator.addProvider(event.includeServer(), 
             new BlockTagProvider(output, lookupProvider, existingFileHelper));

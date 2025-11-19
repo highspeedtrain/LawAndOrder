@@ -6,5 +6,18 @@
     
     "item.createlawandorder.feather_pen": "Feather Pen",
     "item.createlawandorder.gavel": "Gavel",
-    "itemGroup.createlawandorder": "Create: Law and Order"
+    "itemGroup.createlawandorder": "Create: Law and Order",
+
+    "createlawandorder.courtterminal.use.singleplayer": "Court cases are diabled in singleplayer!",
+    "createlawandorder.courtterminal.ui.entertext": "Enter text",
+    "createlawandorder.courtterminal.ui.material": "Invalid materials",
+    "createlawandorder.courtterminal.ui.player": "Invalid player",
+    "createlawandorder.courtterminal.ui.sameplayer": "Cannot sue yourself",
+
+    "createlawandorder.wire.use.notallowed": "Not a valid connection point",
+    "createlawandorder.wire.use.firstpos": "First block set",
+    "createlawandorder.wire.use.secondpos": "Second block set",
+
+    "createlawandorder.advancement.equal_justice_under_law.title": "Equal Justice Under Law",
+    "createlawandorder.advancement.equal_justice_under_law.desc": "Become a Judge."
 }

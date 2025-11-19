@@ -16,6 +16,7 @@ public class BlockLootTables extends BlockLootSubProvider {
     @Override
     protected void generate() {
         this.dropSelf(BlockRegistry.BLUE_BLOCK.get());
+        this.dropSelf(BlockRegistry.COURT_TERMINAL.get());
     }
 
     @Override

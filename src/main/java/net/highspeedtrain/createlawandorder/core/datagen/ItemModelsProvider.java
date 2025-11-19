@@ -3,7 +3,6 @@ package net.highspeedtrain.createlawandorder.core.datagen;
 import net.highspeedtrain.createlawandorder.CreateLawAndOrder;
 import net.highspeedtrain.createlawandorder.core.registry.ItemRegistry;
 import net.minecraft.data.PackOutput;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
@@ -22,10 +21,9 @@ public class ItemModelsProvider extends ItemModelProvider {
         simpleItem(ItemRegistry.GAVEL);
     }
 
-    @SuppressWarnings("removal")
     private <T extends Item> ItemModelBuilder simpleItem(RegistryObject<T> item) {
         return withExistingParent(item.getId().getPath(),
-                new ResourceLocation("item/generated")).texture("layer0",
-                new ResourceLocation(CreateLawAndOrder.MOD_ID,"item/" + item.getId().getPath()));
+                CreateLawAndOrder.path("item/generated")).texture("layer0",
+                CreateLawAndOrder.modPath("item/" + item.getId().getPath()));
     }
 }

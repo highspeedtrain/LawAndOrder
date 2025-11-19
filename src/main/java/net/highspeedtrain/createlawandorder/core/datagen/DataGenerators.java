@@ -43,5 +43,7 @@ public class DataGenerators {
                 List.of(new AdvancementsGenerator())
             )
         );
+
+        CreateLawAndOrder.LOGGER.info("haha curseforge will NEVER know this was a duplicate!!!");
     }
 }

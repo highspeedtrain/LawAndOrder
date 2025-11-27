@@ -11,7 +11,6 @@ public class Tags {
     public static class Blocks {
         public static final TagKey<Block> CAN_WIRE_BLOCK = tag("can_wire_block");
         public static final TagKey<Block> NEEDS_PICKAXE = tag("needs_pickaxe");
-        public static final TagKey<Block> NEEDS_IRON_TOOL = tag("needs_iron_tool");
 
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(CreateLawAndOrder.modPath(name));

@@ -60,7 +60,7 @@ public class CourtTerminalScreen extends AbstractContainerScreen<CourtTerminalMe
 
         guiGraphics.blit(TEXTURE, x, y, 0, 0, imageWidth, imageHeight);
         guiGraphics.blit(TEXTURE, textBox.getX(), textBox.getY(), 1, this.textBox.isFocused() ? 129 : 143, textBox.getWidth(), textBox.getHeight());
-        guiGraphics.blit(TEXTURE, leftPos + (!isValid ? 137 : 177), topPos + (!isValid ? 18 : 0), 177, 0, 15, 13);
+        guiGraphics.blit(TEXTURE, leftPos + (!isValid ? 137 : 5000), topPos + (!isValid ? 18 : 0), 177, 0, 15, 13);
     }
 
     @Override

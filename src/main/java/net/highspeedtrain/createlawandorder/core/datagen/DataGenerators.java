@@ -44,6 +44,6 @@ public class DataGenerators {
             )
         );
 
-        CreateLawAndOrder.LOGGER.info("haha curseforge will NEVER know this was a duplicate!!!");
+        CreateLawAndOrder.LOGGER.info("curseforge will NEVER know this was a duplicate!!!");
     }
 }

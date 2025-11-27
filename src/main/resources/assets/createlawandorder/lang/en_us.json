@@ -3,6 +3,8 @@
 
     "block.createlawandorder.blue_block": "Blue Block",
     "block.createlawandorder.court_terminal": "Court Terminal",
+
+    "entity.minecraft.villager.createlawandorder.attorney_general": "Attorney General",
     
     "item.createlawandorder.feather_pen": "Feather Pen",
     "item.createlawandorder.gavel": "Gavel",

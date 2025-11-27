@@ -62,10 +62,10 @@ public class CourtTerminalBlock extends Block {
             return InteractionResult.SUCCESS;
         }
 
-        if (player.getServer().isSingleplayer()) {
+        /*if (player.getServer().isSingleplayer()) {
             player.sendSystemMessage(Component.translatable("createlawandorder.courtterminal.use.singleplayer").withStyle(ChatFormatting.RED));
             return InteractionResult.SUCCESS;
-        }
+        }*/
 
         player.openMenu(blockState.getMenuProvider(level, blockPos));
         return InteractionResult.CONSUME;

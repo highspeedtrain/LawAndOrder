@@ -24,8 +24,5 @@ public class BlockTagProvider extends BlockTagsProvider {
 
         this.tag(Tags.Blocks.CAN_WIRE_BLOCK)
             .add(BlockRegistry.BLUE_BLOCK.get());
-
-        this.tag(Tags.Blocks.NEEDS_IRON_TOOL)
-            .add(BlockRegistry.BLUE_BLOCK.get());
     }
 }

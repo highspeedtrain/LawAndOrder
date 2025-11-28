@@ -22,6 +22,7 @@ import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 
 @EventBusSubscriber(modid = CreateLawAndOrder.MOD_ID)
 public class VillagerEventHandler {
+
     @SubscribeEvent
     public static void onVillagerDeath(LivingDeathEvent event) {
         if (!(event.getEntity() instanceof Villager)) {

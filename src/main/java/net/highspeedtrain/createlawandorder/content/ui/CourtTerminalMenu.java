@@ -21,6 +21,7 @@ import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.inventory.TransientCraftingContainer;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.Level;
 import net.minecraftforge.network.NetworkDirection;
 
 public class CourtTerminalMenu extends AbstractContainerMenu {
@@ -208,7 +209,7 @@ public class CourtTerminalMenu extends AbstractContainerMenu {
         return stillValid(this.access, player, BlockRegistry.COURT_TERMINAL.get());
     }
 
-    public void setPlayerText(String string, net.minecraft.world.level.Level level) {
+    public void setPlayerText(String string, Level level) {
         if (player.level().isClientSide()) {
             return;
         }

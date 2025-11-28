@@ -14,11 +14,13 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 
+import javax.annotation.Nullable;
+
 @Mixin(AbstractClientPlayer.class)
 public abstract class DevCapeMixin extends Player {
 
     @Shadow
-    public abstract PlayerInfo getPlayerInfo();
+    protected abstract PlayerInfo getPlayerInfo();
 
     public DevCapeMixin(Level p_250508_, BlockPos p_250289_, float p_251702_, GameProfile p_252153_) {
         super(p_250508_, p_250289_, p_251702_, p_252153_);
@@ -28,6 +30,7 @@ public abstract class DevCapeMixin extends Player {
      * @author highspeedtrain
      * @reason dev cape
      */
+    @Nullable
     @Overwrite
     public ResourceLocation getElytraTextureLocation() {
         if (DevStuff.DEVS.contains(this.getUUID().toString()) || this.getGameProfile().getName().equals("Dev")) {
@@ -42,6 +45,7 @@ public abstract class DevCapeMixin extends Player {
      * @author highspeedtrain
      * @reason dev cape
      */
+    @Nullable
     @Overwrite
     public ResourceLocation getCloakTextureLocation() {
         if (DevStuff.DEVS.contains(this.getUUID().toString()) || this.getGameProfile().getName().equals("Dev")) {

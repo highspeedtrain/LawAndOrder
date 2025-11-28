@@ -1,6 +1,7 @@
 package net.highspeedtrain.createlawandorder.content.block;
 
 import net.highspeedtrain.createlawandorder.content.ui.CourtTerminalMenu;
+import net.highspeedtrain.createlawandorder.core.registry.ItemRegistry;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -20,6 +21,7 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.phys.BlockHitResult;
+import org.jetbrains.annotations.NotNull;
 
 public class CourtTerminalBlock extends Block {
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
@@ -41,24 +43,27 @@ public class CourtTerminalBlock extends Block {
         return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection());
     }
 
-    public BlockState rotate(BlockState blockState, Rotation rotation) {
+    @SuppressWarnings("deprecation")
+    @Override
+    public @NotNull BlockState rotate(BlockState blockState, Rotation rotation) {
         return blockState.setValue(FACING, rotation.rotate(blockState.getValue(FACING)));
     }
 
     @SuppressWarnings("deprecation")
     @Override
-    public BlockState mirror(BlockState blockState, Mirror mirror) {
+    public @NotNull BlockState mirror(BlockState blockState, Mirror mirror) {
         return blockState.rotate(mirror.getRotation(blockState.getValue(FACING)));
     }
 
     // menu stuff
     @Override
-    public InteractionResult use(BlockState blockState, Level level, BlockPos blockPos, Player player, InteractionHand hand, BlockHitResult hitResult) {
+    public @NotNull InteractionResult use(BlockState blockState, Level level, BlockPos blockPos, Player player, InteractionHand hand, BlockHitResult hitResult) {
         if (level.isClientSide()) {
             return InteractionResult.SUCCESS;
         }
 
-        if (!player.getItemInHand(hand).isEmpty()) {
+        if (player.getItemInHand(hand).getItem().equals(ItemRegistry.WIRE.get())) {
+            player.sendSystemMessage(Component.translatable("createlawandorder.wire.use.crouch").withStyle(ChatFormatting.BLUE));
             return InteractionResult.SUCCESS;
         }
 
@@ -72,8 +77,6 @@ public class CourtTerminalBlock extends Block {
     }
 
     public MenuProvider getMenuProvider(BlockState blockState, Level level, BlockPos blockPos) {
-      return new SimpleMenuProvider((id, inventory, player) -> {
-         return new CourtTerminalMenu(id, inventory);
-      }, CONTAINER_TITLE);
+      return new SimpleMenuProvider((id, inventory, player) -> new CourtTerminalMenu(id, inventory), CONTAINER_TITLE);
    }
 }

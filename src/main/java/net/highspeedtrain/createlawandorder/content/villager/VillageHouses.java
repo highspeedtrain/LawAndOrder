@@ -58,7 +58,7 @@ public class VillageHouses {
             processorListRegistry, 
             ResourceLocation.parse("minecraft:village/plains/houses"), 
             "createlawandorder:attorney_general_house_plains", 
-            100
+            1
         );
     }
 }

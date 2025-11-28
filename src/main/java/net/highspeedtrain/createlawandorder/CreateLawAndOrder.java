@@ -27,6 +27,8 @@ public class CreateLawAndOrder {
         VillagerProfessions.register(modEventBus);
         MenuRegistry.register(modEventBus);
         CLONetworking.register();
+
+        LOGGER.info("Hello, World!");
     }
 
     public static ResourceLocation modPath(String path) {
